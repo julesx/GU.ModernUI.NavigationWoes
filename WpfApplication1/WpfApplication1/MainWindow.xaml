@@ -1,0 +1,28 @@
+﻿<mui:ModernWindow x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        ContentSource="Pages/Home.xaml"
+        xmlns:mui="http://gu.com/ModernUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Settings" Source="Pages/Settings.xaml" DataContext="{Binding}" />
+    </mui:ModernWindow.TitleLinks>
+
+    <mui:ModernWindow.MainMenu>
+        <mui:LinkGroup DisplayName="Home">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Home" Source="Pages/Home.xaml" DataContext="{Binding}" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Settings" Source="Pages/Settings.xaml" DataContext="{Binding}" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MainMenu>
+
+</mui:ModernWindow>
